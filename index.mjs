@@ -1,5 +1,6 @@
 import pino from 'pino'
 import { execa } from 'execa'
+import './lib/index.mjs'
 
 console.log('Index process')
 
@@ -13,8 +14,6 @@ for (let i = 0; i < 1000; i++) {
   const logger = pino(destination)
   loggers.push(logger)
   logger.info(`Logger ${i}`)
-
-  await new Promise(resolve => setTimeout(resolve, 10))
 }
 
 for (let i = 0; i < 10; i++) {
