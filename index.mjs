@@ -4,6 +4,8 @@ import './lib/index.mjs'
 
 console.log('Index process')
 
+process.on('exit', () => {})
+
 const loggers = []
 for (let i = 0; i < 1000; i++) {
   const destination = pino.destination({
