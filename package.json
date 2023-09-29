@@ -1,0 +1,17 @@
+{
+  "name": "pino-reproducible-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "c8 node --test index.test.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "c8": "^8.0.1",
+    "desm": "^1.3.0",
+    "execa": "^8.0.1",
+    "pino": "^8.15.1"
+  }
+}
